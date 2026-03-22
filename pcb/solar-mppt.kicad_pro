@@ -588,7 +588,12 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "I2C": [
+        "SDA",
+        "SCL"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -629,7 +634,7 @@
         "uuid": "e5824d85-857e-4263-9470-4cbe5d923ee8"
       }
     ],
-    "used_designators": "U1-2",
+    "used_designators": "R1-2,D1-2,#PWR1-12,C1-11,Q1-6,U1-2",
     "variants": []
   },
   "sheets": [

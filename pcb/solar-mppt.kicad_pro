@@ -634,13 +634,17 @@
         "uuid": "e5824d85-857e-4263-9470-4cbe5d923ee8"
       }
     ],
-    "used_designators": "R1-2,D1-2,#PWR1-12,C1-11,Q1-6,U1-2",
+    "used_designators": "#PWR19,#PWR21,J1,Q5-9",
     "variants": []
   },
   "sheets": [
     [
       "e5824d85-857e-4263-9470-4cbe5d923ee8",
       "Root"
+    ],
+    [
+      "9116d881-f0f8-4806-b4ed-16b90985d726",
+      "MPPT"
     ]
   ],
   "text_variables": {},

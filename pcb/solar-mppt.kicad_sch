@@ -883,6 +883,12 @@
 		)
 	)
 	(junction
+		(at 68.58 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1158f8c4-3abb-450f-9420-66917918bfcd")
+	)
+	(junction
 		(at 33.02 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -911,6 +917,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87617879-dfe8-40c8-8f4c-6e0ffca9dbc8")
+	)
+	(junction
+		(at 109.22 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a83274f-f1b2-41f6-b91d-3aeeb16e1484")
 	)
 	(junction
 		(at 33.02 160.02)
@@ -994,6 +1006,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 134.62) (xy 109.22 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c7d6cd8-fb83-4f3c-b64f-c0b0520138ee")
+	)
+	(wire
+		(pts
 			(xy 33.02 170.18) (xy 33.02 175.26)
 		)
 		(stroke
@@ -1044,6 +1066,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 144.78) (xy 109.22 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0e4b02-1ec7-4a51-b418-95397d0af497")
+	)
+	(wire
+		(pts
 			(xy 88.9 152.4) (xy 88.9 165.1)
 		)
 		(stroke
@@ -1051,6 +1083,16 @@
 			(type default)
 		)
 		(uuid "5f7002d6-7c0b-488b-8e4e-21acd27fdd8f")
+	)
+	(wire
+		(pts
+			(xy 109.22 134.62) (xy 116.84 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd036bf-187f-4a2a-8505-dd8df82e7e35")
 	)
 	(wire
 		(pts
@@ -1272,6 +1314,16 @@
 		)
 		(uuid "f4ac354e-81a8-46a6-8716-57ecb4d4ff14")
 	)
+	(wire
+		(pts
+			(xy 68.58 134.62) (xy 109.22 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f54528d3-27fe-4e75-bcf7-9a7de0798f5c")
+	)
 	(label "UCPD1_CC1"
 		(at 71.12 160.02 0)
 		(effects
@@ -1385,6 +1437,109 @@
 			(project "solar-mppt"
 				(path "/e5824d85-857e-4263-9470-4cbe5d923ee8"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 109.22 140.97 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "666ab87a-4c77-4c94-93af-57e9d4ddee42")
+		(property "Reference" "D148"
+			(at 111.76 142.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 111.76 139.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-882"
+			(at 109.22 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 109.22 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 109.22 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Product Number" "TPD1E10B09DPYR"
+			(at 109.22 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f33ee4c5-e2a4-4425-a50c-da612c2a8586")
+		)
+		(pin "1"
+			(uuid "4764077f-23f4-4232-ab79-7210a0d758d3")
+		)
+		(instances
+			(project "solar-mppt"
+				(path "/e5824d85-857e-4263-9470-4cbe5d923ee8"
+					(reference "D148")
 					(unit 1)
 				)
 			)
@@ -1688,6 +1843,84 @@
 			(project "solar-mppt"
 				(path "/e5824d85-857e-4263-9470-4cbe5d923ee8"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7589649-b2a5-4d48-9123-44fd1e76352a")
+		(property "Reference" "#PWR037"
+			(at 109.22 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa6af30f-fbae-4e40-80a4-71c82b89a0a4")
+		)
+		(instances
+			(project "solar-mppt"
+				(path "/e5824d85-857e-4263-9470-4cbe5d923ee8"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
